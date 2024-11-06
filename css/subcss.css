@@ -1,0 +1,289 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.contents{
+    width: 1400px;
+    height: auto;
+    margin: auto;
+}
+button{
+    position: fixed;
+    background-color: #f5f5f5;
+    font-weight: 200;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 860px;
+    left: 1585px;
+    z-index: 1;
+}
+.dropdown{
+    position : relative;
+    display : inline-block;
+}  
+.dropdown-content{
+    display : none;
+    position : absolute;
+    z-index : 1; /*다른 요소들보다 앞에 배치*/
+}  
+.dropdown-content a{
+    text-decoration-line: none;
+    color: #000;
+}
+.dropdown-content ul li{
+    display : block;
+    margin-top: 10px;
+    color: #000;
+    text-decoration-line: none;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropbtn{
+    padding-right: 490px;
+    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+.headcon{
+    position: absolute;
+    left: 6.5%;
+    padding-top: 18px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+}
+.header-header{
+    z-index : 1;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: #fdfdfd;
+    width: 1400px;
+    height: 110px;
+}
+.shoppingbag ul{
+    padding-left: 310px;
+    font-size: 17px;
+    font-family: 'Josefin Slab', serif;
+    transform: skew(-0.1deg);
+    color: #000;
+}
+.shoppingbag ul li{
+    float: left;
+    padding-right: 30px;
+}
+.head-title{
+    padding-top: 270px;
+    padding-bottom: 170px;
+    padding-left: 160px;
+}
+.head-title h2{
+    font-family: 'Josefin Slab', serif;
+    font-size: 50px;
+    float: left;
+}
+.head-title h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 470px;
+}
+.maincon h2{
+    font-family: 'Josefin Slab', serif;
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 33%;
+}
+.sub1con{
+    padding-top: 88px;
+    padding-left: 75px;
+    padding-right: 80px;
+}
+.sub1-1img, .sub1-3img{
+    float: left;
+    padding-right: 65px;
+}
+.sub1-2img, .sub1-4img{
+    float: right;
+    padding-left: 65px;
+}
+.change{
+    position: relative;
+}
+.sub1-1img{
+    float: left;
+}
+.sub1-12img{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+.change:hover .sub1-12img{
+    opacity: 1;
+}
+.change{
+    position: relative;
+}
+.sub1-2img{
+    float: right;
+}
+.sub1-10img{
+    position: absolute;
+    top:32px;
+    left: 53.6%;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+.change:hover .sub1-10img{
+    opacity: 1;
+}
+.change{
+    position: relative;
+}
+.sub1-3img{
+    float: left;
+}
+.sub1-11img{
+    position: absolute;
+    top:31px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+.change:hover .sub1-11img{
+    opacity: 1;
+}
+.change{
+    position: relative;
+}
+.sub1-4img{
+    float: right;
+}
+.sub1-13img{
+    position: absolute;
+    top:47px;
+    left: 53.6%;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+.change:hover .sub1-13img{
+    opacity: 1;
+}
+.sub1-1con{
+    padding-top: 120px;
+    text-align: center;
+    line-height: 27px;
+}
+.sub1-2con{
+    padding-top: 160px;
+    text-align: center;
+    line-height: 27px;
+}
+.sub1-3con{
+    padding-top: 170px;
+    text-align: center;
+    line-height: 27px;
+}
+.sub1-4con{
+    padding-top: 180px;
+    text-align: center;
+    line-height: 27px;
+}
+.sub1-1con p{
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.sub1-2con p{
+    padding-top: 70px;
+    padding-bottom: 110px;
+}
+.sub1-3con p{
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+.sub1-4con p{
+    padding-top: 60px;
+    padding-bottom: 150px;
+}
+.sub1con h2{
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+}
+.sub1con h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.sub1con h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.sub1con p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+.sub2con{
+    padding-bottom: 100px;
+    padding-left: 110px;
+}
+.sub2text1{
+    float: left;
+    padding-bottom: 135px;
+    padding-right: 120px;
+    text-align: center;
+    border-right: 1px solid #000;
+    height: 350px;
+}
+.sub2con h2{
+    font-family: 'Josefin Slab', serif;
+    font-size: 45px;
+    padding-bottom: 60px;
+}
+.sub2con h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    padding-bottom: 66px;
+}
+.sub2con p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.lastcon h2{
+    font-family: 'Josefin Slab', serif;
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 4700px;
+    left: 30%;
+}
+#footer{
+    width:auto;
+    height: 265px;
+    background-color: #fdfdfd;
+}
+#footer h2{
+    font-family: 'Josefin Slab', serif;
+    transform: skew(-0.1deg);
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+#footer p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
