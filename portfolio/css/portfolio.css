@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+*{box-sizing: border-box;}
+body {
+    background-image: radial-gradient(#d8ecee 2px, transparent 1px);
+    background-size: 20px 20px;
+    /* 도트 간격 조절 */
+}
+
+/* 공통 */
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9;
+  z-index: 100;
+}
+.headerBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 200px;
+  height: 60px;
+  position: relative;
+}
+header .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 200;
+}
+
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #d9d9d9;
+  z-index: 100;
+}
+.footerBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  height: 40px;
+  position: relative;
+  font-size: 15px;
+}
+
+/* main */
+#main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding-left: 10%;
+}
+#main h1 {
+  font-size: 125px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+#main span {
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+#main span::before {
+  content: '';
+  background: url(../img/icons/wings.svg);
+  width: 52px; height: 52px;
+}
+
+/* work */
+#work .inner {
+  padding: 0 8vw;
+  height: 100%;
+}
+#work .workList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.workList > li {
+  width: 48%;
+  margin-bottom: 4rem;
+}
+.workList li figure {
+  display: inline-block;
+  width: 100%;
+}
+.workList img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 6px 3 9px rgb(108 108 108 / 10%);
+}
+.workList .txt {margin-top: 2.4rem;}
+.workList .txt p {
+  font-size: 25px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+.workList .move ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10%;
+}
+.workList .move ul a {
+  background: #D8ECEE;
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* project */
+#project .inner {
+  padding: 0 8vw;
+  height: 100%;
+}
+#project .workList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.workList > li {
+  width: 48%;
+  margin-bottom: 5rem;
+}
+.workList figure {
+  display: inline-block;
+  width: 100%;
+}
+.workList img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 6px 3 9px rgb(108 108 108 / 10%);
+}
+.workList .txt {margin-top: 2.4rem;}
+.workList .txt p {
+  font-size: 25px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 15px;
+}
+.workList .txt span {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* logo-wrap */
+.logo-wrap {
+  overflow: hidden;
+  padding: 40px 0;
+}
+.logo-slide {
+  display: flex;
+  width: max-content; /* 이미지에 맞춰 늘어나게 */
+  animation: scroll 20s linear infinite;
+}
+.logo-slide img {
+  width: 80px;
+  margin: 0 30px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* 전체 이미지 길이의 절반만 이동 */
+  }
+}
+
+/* profile */
+#profile {padding-bottom: 6vw;}
+#profile .inner {
+  padding: 4vw 8vw 0 8vw;
+  height: 100%;
+}
+.proContents {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2%;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.proContents .leftCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.proContents .leftCont .mainImg {
+  width: 100%;
+}
+.proContents .leftCont .mainImg img {
+  width: 100%;
+}
+.proContents .rightCont {
+  width: 60%;
+}
+.rightCont p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 2rem;
+  word-break: keep-all;
+}
+.proTxt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 17.5%;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.proTxt .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.proTxt span {
+  font-size: 18px;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}

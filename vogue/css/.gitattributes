@@ -1,0 +1,172 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.contents{
+    width: 1400px;
+    height: auto;
+    margin: auto;
+}
+.main-content .main-img{
+    padding-top: 100px;
+}
+.header-header{
+    position: fixed;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 1400px;
+    height:100px;
+}
+.menu ul li:hover {
+    text-decoration: underline;
+    color: #000;
+}
+.menu a{
+    text-decoration-line: none;
+    color: black;
+}
+.menu ul{
+    padding-left: 630px;
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+.menu ul li{
+    float: left;
+    padding-right: 30px;
+}
+.menu ul li .search{
+    position: absolute;
+    top: 26px;
+    right: 3%;
+}
+.main-content h2{
+    color: #fff;
+    font-family: 'Josefin Slab', serif;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 41%;
+}
+.main-content span{
+    color:#fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    position: absolute;
+    top: 66%;
+    left: 47%;
+}
+.sub-title{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    color: #000;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+}
+.subconbox{
+    padding-left: 55px;
+}
+.subcon1, .subcon2, .subcon4, .subcon5, .subcon6{
+    float: left;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+.subcon6{
+    padding-bottom: 60px;
+}
+.subconbox p{
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    padding-top: 10px;
+}
+.subconbox h2{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 5px;
+}
+.subconbox h2:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.subconbox p:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.sub2-content{
+    float: left; 
+    width: 1400px; 
+    height: 529.5px;
+    background-color: #000;
+}
+.sub2-img{
+    clear: both; 
+    float: left; 
+    width: 750px;
+}
+.sub2conbox{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+    text-align: center;
+    float: right; 
+    width: 650px;
+    padding-top: 10%;
+}
+.sub2conbox span{
+    font-size: 16px;
+    font-weight: 300;
+}
+.sub2conbox h2{
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 35px;
+    padding-bottom: 30px;
+}
+.sub2conbox h4{
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+.sub2conbox p{
+    font-size: 15px;
+    font-weight: 100;
+}
+.lastcon{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    clear: both;
+}
+.footcon{
+    background-color: #000;
+    width: 1400px;
+    height: 352px;
+    padding-top: 90px;
+    text-align: center;
+}
+.sns{
+    margin: 20px 0px 0px 596px;
+}
+.guide{
+    padding-top: 70px;
+    margin: 0px 0px 0px 455px;
+}
+.twitter, .insta, .face{
+    float: left;
+    padding-right: 80px;
+}
+.guide p{
+    color: #fff;
+    float: left;
+    padding-right: 60px;
+}

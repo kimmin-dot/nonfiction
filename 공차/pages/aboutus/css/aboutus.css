@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+body {background: #FCF6ED;}
+
+#main figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#main figure img {
+    width: 100%;
+    height: 100%;
+}
+/* main */
+
+.botWrap {
+    position: relative;
+    height: 100px;
+    margin-bottom: 130px;
+}
+.botWrap a {
+    width: 100px;
+    height: 100px;
+    background-color: #BF0B34;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50%; left: 50%;
+    transform: translateX(-50%);
+}
+.botWrap a img {
+    width: 22px;
+    height: 10px;
+}
+/* botWrap */
+
+#aboutUs {padding-bottom: 120px;}
+#aboutUs .aboutText {text-align: center;}
+.aboutText .aboutTitle {
+    font-size: 50px;
+    font-family: 'Vidaloka', sans-serif !important;
+    font-weight: 400;
+    color: #BF0B34;
+    margin-bottom: 20px;
+}
+.aboutText .top {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #382f2d;
+    margin-bottom: 15px;
+}
+.aboutText figure {margin-bottom: 15px;}
+.aboutText figure img {border-radius: 30px;}
+.aboutText .aboutSub {
+    font-size: 40px;
+    color: #382f2d;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.aboutText .aboutSub span {color: #BF0B34;}
+.aboutText .bot {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #746d6c;
+    font-weight: 500;
+}
+/* aboutus */
+
+#val {
+    background: #fff;
+    border-radius: 50px;
+    padding: 120px 0;
+}
+#val .valCont {text-align: center;}
+.valCont figure {margin-bottom: 70px;}
+.valCont figure img {border-radius: 30px;}
+.valText {margin-bottom: 70px;}
+.valCont .valTitle {
+    font-size: 50px;
+    font-family: 'Vidaloka', sans-serif !important;
+    font-weight: 400;
+    color: #BF0B34;
+    margin-bottom: 20px;
+}
+.valCont p {
+    font-size: 22px;
+    font-weight: 400;
+    color: #382f2d;
+    margin-bottom: 10px;
+}
+.valCont p .great,
+.valCont p .bold {
+    font-weight: 700;
+}
+.valCont p .red {
+    font-weight: 700;
+    color: #BF0B34;
+}
+.valIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+.valIcon li {
+    border: 1px solid #ECD1A3;
+    border-radius: 30px;
+    padding: 50px 25px;
+}
+.valIcon li p {
+    font-family: 'Vidaloka', sans-serif;
+    font-weight: 400;
+}
+.valIcon li img {
+    width: 162px;
+    height: 162px;
+}
+.valCont .gloWrap figure img{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* val */
+
+#timeLine {padding: 120px 0;}
+.lineCont {
+    max-width: 1480px;
+    margin: 0 auto;
+}
+.lineText {
+    width: 520px;
+}
+#timeLine .lineCont .line1,
+#timeLine .lineCont .line2,
+#timeLine .lineCont .line3,
+#timeLine .lineCont .line4,
+#timeLine .lineCont .line5,
+#timeLine .lineCont .line6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+}
+.line1::before {
+    content: '';
+    background: url(../img/line-circle.png) no-repeat center/cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.line1 .lineText,
+.line3 .lineText,
+.line5 .lineText {
+    text-align: right;
+}
+.line1 .lineText::before,
+.line2 .lineText::before,
+.line3 .lineText::before,
+.line4 .lineText::before,
+.line5 .lineText::before,
+.line6 .lineText::before {
+    content: '';
+    background: url(../img/time-line.svg) no-repeat center/cover;
+    width: 4px;
+    height: 554px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.lineText p {
+    color: #382f2d;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.lineText .bold {
+    color: #382f2d;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.lineText span {
+    color: #746d6c;
+    font-size: 18px;
+}
+.lineImg img {
+    border-radius: 30px;
+}
+.lineCir span {
+    width: 140px;
+    height: 140px;
+    color: #fff;
+    background: #C10230;
+    border-radius: 100px;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
