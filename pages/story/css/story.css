@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+section {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+section p {
+    line-height: 1.7; /* 최소 1.6 이상 */
+    letter-spacing: 0.2px;
+}
+
+/* header */
+header {
+    position: fixed;   /* 항상 위에 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 100;      /* 영상보다 위에 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    backdrop-filter: blur(10px);
+}
+header .headerCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 1% 2% 0;
+}
+.dropDown {
+    position: relative;
+}
+.dropCont {
+    position: absolute;
+    top: 150%;
+    left: 5%;
+    width: 200px;
+    max-height: 500px;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+}
+.dropCont.active {
+    max-height: 500px;
+    opacity: 1;
+}
+.dropCont ul li a:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+.dropCont ul {
+    padding: 10px;
+}
+.dropCont li {
+    margin-bottom: 20px;
+}
+.dropCont ul li{
+    display : block;
+    margin-top: 20px;
+    color: #000;
+}
+.dropDown .menuBtn {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.logoimg {
+    margin-left: 110px;
+}
+.shoppingbag ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 200;
+    color: #fff;
+}
+
+/* story */
+.story {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 110px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.story .text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 300px;    
+}
+.story p {
+    font-family: 'Josefin Slab', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+}
+.story span {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #777;
+}
+
+/* mainVis */
+#mainVis { 
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative; 
+    margin-bottom: 110px;
+}
+.mainImg {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.mainImg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 9s infinite;
+}
+.mainImg img:nth-child(1) { animation-delay: 0s; }
+.mainImg img:nth-child(2) { animation-delay: 3s; }
+.mainImg img:nth-child(3) { animation-delay: 6s; }
+@keyframes fade {
+    0%   { opacity: 1; }
+    27%  { opacity: 1; }
+    33%  { opacity: 0; }
+    94%  { opacity: 0; }
+    100% { opacity: 1; } 
+}
+#mainVis h3 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 45px;
+    color: #fff;
+    position: absolute;
+    top: 45%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* storyCont */
+#storyCont .storyInner {
+    padding: 0 50px;
+}
+.storyInner .cont,
+.storyInner .cont1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 100px;
+}
+.storyInner .cont1 {
+    flex-direction: row-reverse;
+}
+.cont .contImg,
+.cont1 .contImg {
+  position: relative;
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  max-width: 578px;
+  overflow: hidden;
+}
+.cont .contImg img,
+.cont1 .contImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.6s ease;
+  display: block;
+}
+.cont .contImg .img1 img,
+.cont1 .contImg .img1 img {
+  opacity: 1;
+  z-index: 1;
+}
+.cont .contImg .img1Hover img,
+.cont1 .contImg .img1Hover img {
+  opacity: 0;
+  z-index: 2;
+}
+.cont .contImg:hover .img1 img,
+.cont1 .contImg:hover .img1 img {
+  opacity: 0;
+}
+.cont .contImg:hover .img1Hover img,
+.cont1 .contImg:hover .img1Hover img {
+  opacity: 1;
+}
+.storyTxt .storyTitle {
+    font-family: 'Josefin Slab', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+.storyTxt .storySub {
+    font-size: 1rem;
+    color: #777;
+}
+.storyTxt span {
+    display: block;
+    font-size: 0.95rem;
+    color: #999;
+    margin-bottom: 25px;
+}
+.storyTxt p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* sub2con */
+.sub2con {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+.sub2con .sub2Inner {
+    padding-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px; /* 여백 조절 가능 */
+}
+.sub2text1{
+    padding-right: 80px;
+    text-align: center;
+    border-right: 1px solid #000;
+    height: 350px;
+}
+.sub2con h2{
+    font-family: 'Josefin Slab', serif;
+    font-size: 45px;
+    padding-bottom: 60px;
+}
+.sub2con h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    padding-bottom: 66px;
+}
+.sub2con p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* lastcon */
+.lastcon {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+.lastconimg img {
+    width: 100%;
+    height: auto;
+}
+.lastcon h2 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* footer */
+footer{
+    max-width: 1920px;
+    margin: 0 auto;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    backdrop-filter: blur(10px);
+}
+footer .footerCont {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8% 2%;
+}
+.footerCont .wrap {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .bold{
+    font-family: 'Josefin Slab', serif;
+    transform: skew(-0.1deg);
+    font-weight: bold;
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+footer p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+footer ul {
+    display: flex;
+    gap: 5px;
+}
+footer ul li {
+    font-size: 12px;
+    border-right: 1px solid #000;
+    padding-right: 5px;
+}
+footer ul li:last-child {border: none;}
